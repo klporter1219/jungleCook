@@ -1,0 +1,19 @@
+{
+  "name": "homeworkfive-multidevice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "serve": "live-server",
+    "compile:sass": "node-sass scss/styles.scss css/styles.css -w"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html,
+body {
+  height: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px; }
+
+.app {
+  position: relative;
+  height: 100%; }
+
+.link-nav {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  width: 800px;
+  height: 50px; }
+
+nav {
+  display: none;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px; }
+  nav .fas {
+    color: black; }
+
+.link-current {
+  color: black;
+  font-weight: lighter;
+  font-size: 25px;
+  text-decoration: none;
+  border-bottom: 3px solid black;
+  margin-left: 300px; }
+
+.link {
+  color: black;
+  font-weight: lighter;
+  font-size: 25px;
+  text-decoration: none;
+  margin-left: 30px; }
+
+.link-login {
+  color: black;
+  font-weight: lighter;
+  font-size: 25px;
+  text-decoration: none;
+  margin-left: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #ffd972;
+  border-radius: 100px; }
+
+@media screen and (max-width: 768px) {
+  .link-nav {
+    display: none; }
+  nav {
+    display: block; } }
+
+.home {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to right, rgba(242, 92, 84, 0.7), rgba(242, 92, 84, 0.7)), url(../images/hero.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .home .circle-holder {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; }
+    .home .circle-holder .little-circle {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      background-color: #fcbcb8;
+      border-radius: 100px;
+      margin-left: 270px;
+      margin-top: -270px;
+      z-index: 0; }
+      .home .circle-holder .little-circle .little-circle-desc {
+        font-size: 10px;
+        font-weight: lighter;
+        margin-left: 35px;
+        margin-top: 50px; }
+    .home .circle-holder .big-circle {
+      width: 300px;
+      height: 300px;
+      background-color: #ffd972;
+      border-radius: 200px;
+      z-index: 1; }
+      .home .circle-holder .big-circle .big-circle-title {
+        font-size: 24px;
+        margin-top: 90px;
+        margin-left: 60px; }
+      .home .circle-holder .big-circle .big-circle-desc {
+        font-size: 13px;
+        font-weight: lighter;
+        margin-left: 90px; }
+
+.logo {
+  background-image: url(../images/logo.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 168px;
+  height: 55px;
+  position: fixed;
+  top: 50px;
+  left: 50px; }
+
+@media all and (min-width: 700px) and (max-width: 768px) {
+  .home .circle-holder .little-circle {
+    margin-left: 230px;
+    margin-top: -250px; } }
+
+footer {
+  width: 100%;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: -55px; }
+  footer .copyright {
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: italic;
+    margin-right: 70px;
+    margin-left: -30px; }
+  footer .footer-login {
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: italic;
+    text-decoration: none;
+    color: black; }
+  footer .footer-recipes {
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: italic;
+    text-decoration: none;
+    color: black; }
+  footer .privacy {
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: italic;
+    text-decoration: none;
+    color: black; }
+  footer .create-recipes {
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: italic;
+    text-decoration: none;
+    color: black; }
+  footer .facebook-logo {
+    object-fit: cover;
+    width: 19px;
+    height: 19px;
+    margin-left: 70px;
+    margin-bottom: 10px; }
+  footer .instagram-logo {
+    object-fit: cover;
+    width: 19px;
+    height: 19px;
+    margin-bottom: 10px; }

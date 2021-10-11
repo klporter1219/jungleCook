@@ -1,0 +1,88 @@
+.home {
+  height: 100%;
+  width: 100%;
+  // background-color: #ffb3c6;
+  background-image: linear-gradient(
+      to right,
+      rgba(242, 92, 84, 0.7),
+      rgba(242, 92, 84, 0.7)
+    ),
+    url(../images/hero.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .circle-holder {
+    width: 400px;
+    height: 400px;
+    // background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .little-circle {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      background-color: #fcbcb8;
+      border-radius: 100px;
+      margin-left: 270px;
+      margin-top: -270px;
+      z-index: 0;
+
+      .little-circle-desc {
+        font-size: 10px;
+        font-weight: lighter;
+        margin-left: 35px;
+        margin-top: 50px;
+      }
+    }
+
+    .big-circle {
+      width: 300px;
+      height: 300px;
+      background-color: #ffd972;
+      border-radius: 200px;
+      z-index: 1;
+
+      .big-circle-title {
+        font-size: 24px;
+        margin-top: 90px;
+        margin-left: 60px;
+      }
+
+      .big-circle-desc {
+        font-size: 13px;
+        font-weight: lighter;
+        margin-left: 90px;
+      }
+    }
+  }
+}
+
+.logo {
+  background-image: url(../images/logo.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 168px;
+  height: 55px;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+}
+
+@media all and (min-width: 700px) and (max-width: 768px) {
+  .home {
+    .circle-holder {
+      .little-circle {
+        margin-left: 230px;
+        margin-top: -250px;
+      }
+    }
+  }
+}
