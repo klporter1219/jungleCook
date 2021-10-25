@@ -10,54 +10,39 @@
     <link rel="stylesheet" href="fonts/Caveat-Regular.ttf" />
 </head>
 <body>
+    <div class="logo"></div>
 
-    <div class="app">
-
-        <div class="logo"></div>
-
-        <div class="link-nav">
-            <a class="link-current" href="#">Home</a>
-            <a class="link" href="#">Browse</a>
-            <a class="link" href="#">Create Recipes</a>
-            <a class="link-login" href="#">Login</a>
-        </div>
-
-        <nav>
-            <i class="fas fa-bars fa-3x"></i>
-        </nav>
-
-        <div class="home">
-            <div class="circle-holder">
-                <div class="little-circle">
-                    <h5 class="little-circle-desc">Want to be a Jungle<br> Cook? Go ahead and<br> the kitchen is yours!</h5>
-                </div>
-                <div class="big-circle">
-                    <h2 class="big-circle-title">The Jungle Cook</h2>
-                    <h5 class="big-circle-desc">The home to various<br> 
-                        recipes of your choice.<br>
-                        Add your own recipe<br>
-                        today and fill the world<br>
-                        with joy!</h5>
-                </div>
-            </div>
-        </div>
-
-        <footer>
-            <h3 class="copyright">Copyright © 2019 The Jungle Cook</h3>
-            <h3><a class="footer-login" href="#">Login</a></h3>
-            <h3><a class="footer-recipes" href="#">Recipes by Category</a></h3>
-            <h3><a class="privacy" href="#">Privacy and Copyright</a></h3>
-            <h3><a class="create-recipes" href="#">Create Recipe</a></h3>
-
-            <a href="#">
-                <img class="facebook-logo" src="./images/facebook.svg" alt="Facebook Logo" />
-            </a>
-            <a href="#">
-                <img class="instagram-logo" src="./images/instagram.svg" alt="Instagram Logo" />
-            </a>
-        </footer>
-
+    <div class="link-nav">
+        <a class="link-current" href="#/home">Home</a>
+        <a class="link" href="#">Browse</a>
+        <a class="link" href="#">Create Recipes</a>
+        <a class="link-login" href="#/login">Login</a>
     </div>
 
+    <nav>
+        <i class="fas fa-bars fa-3x"></i>
+    </nav>
+
+
+    <div id="app"></div>
+
+    <footer>
+        <h3 class="copyright">Copyright © 2019 The Jungle Cook</h3>
+        <h3><a class="footer-login" href="#">Login</a></h3>
+        <h3><a class="footer-recipes" href="#">Recipes by Category</a></h3>
+        <h3><a class="privacy" href="#">Privacy and Copyright</a></h3>
+        <h3><a class="create-recipes" href="#">Create Recipe</a></h3>
+
+        <a href="#">
+            <img class="facebook-logo" src="./images/facebook.svg" alt="Facebook Logo" />
+        </a>
+        <a href="#">
+            <img class="instagram-logo" src="./images/instagram.svg" alt="Instagram Logo" />
+        </a>
+    </footer>
+
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <script src="app/model.js"></script>
+    <script src="app/app.js"></script>
 </body>
 </html>
