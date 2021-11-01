@@ -12,12 +12,7 @@
 <body>
     <div class="logo"></div>
 
-    <div class="link-nav">
-        <a class="link-current" href="#/home">Home</a>
-        <a class="link" href="#">Browse</a>
-        <a class="link" href="#">Create Recipes</a>
-        <a class="link-login" href="#/login">Login</a>
-    </div>
+    <div id="nav"></div>
 
     <nav>
         <i class="fas fa-bars fa-3x"></i>
@@ -26,21 +21,25 @@
 
     <div id="app"></div>
 
-    <footer>
-        <h3 class="copyright">Copyright © 2019 The Jungle Cook</h3>
-        <h3><a class="footer-login" href="#">Login</a></h3>
-        <h3><a class="footer-recipes" href="#">Recipes by Category</a></h3>
-        <h3><a class="privacy" href="#">Privacy and Copyright</a></h3>
-        <h3><a class="create-recipes" href="#">Create Recipe</a></h3>
+    <div id="footer"></div>
 
-        <a href="#">
-            <img class="facebook-logo" src="./images/facebook.svg" alt="Facebook Logo" />
-        </a>
-        <a href="#">
-            <img class="instagram-logo" src="./images/instagram.svg" alt="Instagram Logo" />
-        </a>
-    </footer>
-
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.2.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.2.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.2.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.2.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.2.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.2.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.2.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.2.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.2.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.2.0/firebase-performance-compat.js"></script>
+    <!-- 
+        initialize the SDK after all desired features are loaded, set useEmulator to false
+        to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
     <script src="lib/jquery-3.6.0.min.js"></script>
     <script src="app/model.js"></script>
     <script src="app/app.js"></script>
