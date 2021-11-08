@@ -1,9 +1,9 @@
 <div class="login">
-    <form class="form">
+    <form id="login" class="form" onSubmit="return login()">
         <h2 class="form-title">Login Here!</h2>
-        <input class="form-input" type="text" placeholder="Email Address" />
-        <input class="form-input" type="text" placeholder="Password" />
-        <a class="form-login" href="#">Login</a>
+        <input class="form-input" type="text" name="email" placeholder="Email Address" />
+        <input class="form-input" type="password" name="password" placeholder="Password" />
+        <button type="submit" class="form-login">Login</button>
     </form>
     <form id="signUp" class="form2" onSubmit="return createAccount()">
         <h6 class="form2-sub-title">don’t have an account?</h6>

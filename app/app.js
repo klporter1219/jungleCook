@@ -26,7 +26,16 @@ function setAuthed(authed) {
 function initSite() {
     $(window).on('hashchange', route);
     route();
-    setAuthed(false);
+    
+    firebase
+    .auth()
+    .onAuthStateChanged(function(user) {
+        if (user && user.email) {
+          setAuthed(true);
+        } else {
+          setAuthed(false);
+        }
+      });
 }
 
 function createAccount() {
@@ -40,7 +49,30 @@ function createAccount() {
     .auth()
     .createUserWithEmailAndPassword(values.email, values.password)
     .then((userCredential) => {
-    setAuthed(true);
+        inputs.each(function() {
+            $(this).val('');
+        });
+    })
+    .catch((error) => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    console.log(errorMessage);
+    });
+
+    return false;
+}
+
+function login() {
+    const inputs = $('#login :input');
+    const values = {};
+    inputs.each(function() {
+        values[this.name] = $(this).val();
+    });
+
+    firebase
+    .auth()
+    .signInWithEmailAndPassword(values.email, values.password)
+    .then((userCredential) => {
 
     inputs.each(function() {
         $(this).val('');
@@ -50,10 +82,15 @@ function createAccount() {
     var errorCode = error.code;
     var errorMessage = error.message;
     console.log(errorMessage);
-    // ..
     });
 
     return false;
+}
+
+function logout(){
+    firebase
+    .auth()
+    .signOut();
 }
 
 $(document).ready(function (){
