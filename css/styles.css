@@ -20,6 +20,19 @@ p {
   position: relative;
   height: 100%; }
 
+.add-input {
+  margin-top: -45px;
+  position: absolute;
+  margin-left: 1080px;
+  background: pink;
+  width: 38px;
+  height: 38px;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  font-size: 20px;
+  cursor: pointer; }
+
 .link-nav {
   position: fixed;
   top: 50px;
@@ -215,6 +228,359 @@ nav {
     display: block;
     margin-top: 25px;
     margin-left: 45px; }
+
+.browse {
+  background-image: linear-gradient(to right, rgba(167, 232, 189, 0.7), rgba(167, 232, 189, 0.7)), url(../images/recipe-hero.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 1000px; }
+  .browse .browse-title {
+    font-size: 25px;
+    padding-top: 195px;
+    padding-left: 107px;
+    font-weight: lighter; }
+  .browse .browse-row1 {
+    display: flex; }
+  .browse .pizza {
+    width: 300px;
+    height: 263px;
+    background-image: url(../images/recipe-pizza.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 24px;
+    margin-left: 107px;
+    margin-top: 50px; }
+  .browse .food-desc {
+    width: 224px;
+    height: 263px;
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 24px; }
+  .browse .food-title {
+    font-size: 15px;
+    font-weight: lighter;
+    border-bottom: 3px solid black;
+    margin-top: 46px;
+    text-align: center; }
+  .browse .food-summary {
+    font-size: 9px;
+    font-weight: lighter;
+    margin-top: 20px;
+    text-align: center; }
+  .browse .food-timer {
+    display: flex; }
+  .browse .timer {
+    width: 23px;
+    height: 24px;
+    margin-top: 20px;
+    margin-left: 71px; }
+  .browse .timer-desc {
+    margin-top: 25px;
+    margin-left: 18px;
+    font-weight: lighter;
+    font-size: 10px; }
+  .browse .food-serving {
+    display: flex; }
+  .browse .servings {
+    width: 23px;
+    height: 24px;
+    margin-top: 5px;
+    margin-left: 71px; }
+  .browse .servings-desc {
+    padding-top: 10px;
+    padding-left: 18px;
+    font-weight: lighter;
+    font-size: 10px; }
+  .browse .burger {
+    width: 300px;
+    height: 263px;
+    background-image: url(../images/recipe-burger.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 24px;
+    margin-left: 107px;
+    margin-top: 50px; }
+  .browse .servings-desc-burger {
+    padding-top: 10px;
+    padding-left: 18px;
+    font-weight: lighter;
+    font-size: 10px; }
+  .browse .browse-row2 {
+    display: flex; }
+  .browse .pilaf {
+    background-image: url(../images/recipe-pilaf.jpeg);
+    width: 300px;
+    height: 263px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 24px;
+    margin-left: 107px;
+    margin-top: 50px; }
+  .browse .chowmein {
+    background-image: url(../images/recipe-chowmein.jpeg);
+    width: 300px;
+    height: 263px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 24px;
+    margin-left: 107px;
+    margin-top: 50px; }
+
+.create {
+  width: 100%;
+  margin-bottom: 100px; }
+  .create .create-title {
+    font-size: 25px;
+    font-weight: lighter;
+    margin-top: 214px;
+    margin-left: 149px; }
+  .create .create-form-input {
+    width: 974px;
+    border: none;
+    border-bottom: 3px solid black;
+    font-size: 20px;
+    margin-top: 83px;
+    margin-left: 149px;
+    display: block; }
+  .create .create-list {
+    width: 981px; }
+  .create .list-title {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 135px;
+    margin-left: 151px; }
+  .create .add-form-input {
+    width: 974px;
+    border: none;
+    border-bottom: 3px solid black;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 149px;
+    display: block; }
+  .create .create-recipe {
+    background-color: #efa7a7;
+    width: 422px;
+    height: 52px;
+    font-size: 25px;
+    font-weight: lighter;
+    border-radius: 26px;
+    margin-top: 109px;
+    margin-left: 500px; }
+
+.recipes {
+  background-image: linear-gradient(to right, rgba(167, 232, 189, 0.7), rgba(167, 232, 189, 0.7)), url(../images/recipe-hero.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  margin-bottom: 50px;
+  padding-bottom: 50px; }
+  .recipes .recipes-title {
+    font-size: 25px;
+    font-weight: lighter;
+    padding-top: 228px;
+    padding-left: 107px; }
+  .recipes .pizza {
+    display: flex; }
+  .recipes .recipe-pizza {
+    background-color: gray;
+    width: 300px;
+    height: 263px;
+    border-radius: 24px;
+    margin-top: 50px;
+    margin-left: 107px; }
+  .recipes .view {
+    font-size: 20px;
+    font-weight: lighter;
+    width: 128px;
+    height: 42px;
+    background-color: #ffd972;
+    border-radius: 26px;
+    margin-top: 110px;
+    margin-left: 86px; }
+  .recipes .view-link {
+    text-decoration: none;
+    color: black; }
+  .recipes .food-desc {
+    width: 224px;
+    height: 263px;
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 24px; }
+  .recipes .food-title {
+    font-size: 15px;
+    font-weight: lighter;
+    border-bottom: 3px solid black;
+    margin-top: 46px;
+    text-align: center; }
+  .recipes .food-summary {
+    font-size: 9px;
+    font-weight: lighter;
+    margin-top: 20px;
+    text-align: center; }
+  .recipes .food-timer {
+    display: flex; }
+  .recipes .timer {
+    width: 23px;
+    height: 24px;
+    margin-top: 20px;
+    margin-left: 71px; }
+  .recipes .timer-desc {
+    margin-top: 25px;
+    margin-left: 18px;
+    font-weight: lighter;
+    font-size: 10px; }
+  .recipes .food-serving {
+    display: flex; }
+  .recipes .servings {
+    width: 23px;
+    height: 24px;
+    margin-top: 5px;
+    margin-left: 71px; }
+  .recipes .servings-desc {
+    padding-top: 10px;
+    padding-left: 18px;
+    font-weight: lighter;
+    font-size: 10px; }
+  .recipes .edit {
+    font-size: 20px;
+    font-weight: lighter;
+    background-color: #ffd972;
+    width: 128px;
+    height: 42px;
+    border-radius: 26px;
+    margin-top: 15px;
+    margin-left: 122px; }
+  .recipes .edit-link {
+    text-decoration: none;
+    color: black; }
+  .recipes .delete {
+    font-size: 20px;
+    font-weight: lighter;
+    background-color: #ffd972;
+    width: 128px;
+    height: 42px;
+    border-radius: 26px;
+    margin-top: 15px;
+    margin-left: 14px; }
+  .recipes #recipe-list {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap; }
+    .recipes #recipe-list .loading {
+      display: block;
+      text-align: center;
+      width: 100%; }
+
+.view {
+  width: 100%;
+  height: 1500px; }
+  .view .food-image {
+    background-image: url(../images/recipe-pizza.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 468px;
+    height: 421px;
+    margin-top: 243px;
+    margin-left: 134px; }
+  .view .image {
+    display: flex; }
+  .view .view-title {
+    font-size: 25px;
+    font-weight: lighter;
+    margin-top: 248px;
+    margin-left: 40px; }
+  .view .view-desc {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-left: 40px;
+    margin-top: 35px; }
+  .view .view-total {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-left: 40px;
+    margin-top: 45px; }
+  .view .view-amount {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-left: 40px;
+    margin-top: 35px; }
+  .view .subtitle {
+    font-size: 25px;
+    font-weight: lighter;
+    margin-top: 66px;
+    margin-left: 134px; }
+  .view .subtitle-desc {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 35px;
+    margin-left: 134px; }
+  .view .view-edit {
+    font-size: 20px;
+    font-weight: lighter;
+    width: 128px;
+    height: 42px;
+    background-color: #ffd972;
+    border-radius: 26px;
+    margin-top: 60px;
+    margin-left: 134px; }
+  .view .edit-link {
+    text-decoration: none;
+    color: black; }
+
+.edit {
+  width: 100%;
+  margin-bottom: 100px; }
+  .edit .edit-title {
+    font-size: 25px;
+    font-weight: lighter;
+    margin-top: 214px;
+    margin-left: 149px; }
+  .edit .edit-form-input {
+    width: 974px;
+    border: none;
+    border-bottom: 3px solid black;
+    font-size: 20px;
+    margin-top: 83px;
+    margin-left: 149px;
+    display: block; }
+  .edit .edit-list {
+    width: 981px; }
+  .edit .list-title {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 135px;
+    margin-left: 151px; }
+  .edit .list-form-input {
+    width: 974px;
+    border: none;
+    border-bottom: 3px solid black;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 149px;
+    display: block; }
+  .edit .submit {
+    font-size: 25px;
+    font-weight: lighter;
+    width: 422px;
+    height: 52px;
+    background-color: #efa7a7;
+    border-radius: 26px;
+    margin-top: 109px;
+    margin-left: 500px; }
+
+#loading h2 {
+  width: 100%;
+  margin-top: 200px;
+  text-align: center;
+  margin-bottom: 100px; }
 
 footer {
   width: 100%;

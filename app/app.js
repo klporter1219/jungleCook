@@ -1,5 +1,8 @@
+let _db;
+let _user;
+
 function route() {
-    let hashTAG = window.location.hash;
+    let hashTAG = window.location.hash.split('?')[0];
     let id = hashTAG.replace("#/", "");
 
     MODEL.getPages(id);
@@ -32,6 +35,8 @@ function initSite() {
     .onAuthStateChanged(function(user) {
         if (user && user.email) {
           setAuthed(true);
+          _db = firebase.firestore();
+          _user = user;
         } else {
           setAuthed(false);
         }

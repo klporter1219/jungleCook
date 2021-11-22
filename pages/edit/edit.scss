@@ -1,0 +1,60 @@
+.edit {
+  width: 100%;
+  margin-bottom: 100px;
+
+  .edit-title {
+    font-size: 25px;
+    font-weight: lighter;
+    margin-top: 214px;
+    margin-left: 149px;
+  }
+
+  .edit-form-input {
+    width: 974px;
+    border: none;
+    border-bottom: 3px solid black;
+    font-size: 20px;
+    margin-top: 83px;
+    margin-left: 149px;
+    display: block;
+  }
+
+  .edit-list {
+    width: 981px;
+  }
+
+  .list-title {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 135px;
+    margin-left: 151px;
+  }
+
+  .list-form-input {
+    width: 974px;
+    border: none;
+    border-bottom: 3px solid black;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 149px;
+    display: block;
+  }
+
+  .submit {
+    font-size: 25px;
+    font-weight: lighter;
+    width: 422px;
+    height: 52px;
+    background-color: #efa7a7;
+    border-radius: 26px;
+    margin-top: 109px;
+    margin-left: 500px;
+  }
+}
+
+#loading h2 {
+  width: 100%;
+  margin-top: 200px;
+  text-align: center;
+  margin-bottom: 100px;
+}

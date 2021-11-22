@@ -1,0 +1,35 @@
+<div id="loading">
+    <h2>
+        Loading...
+    </h2>
+</div>
+
+<div id="edit-wrapper" class="edit">
+    <h2 class="edit-title">Hey there, edit your recipe!</h2>
+
+    <input class="edit-form-input" type="file" id="image" placeholder="Edit Recipe Image" />
+    <input class="edit-form-input" type="text" id="name" placeholder="Supreme Pizza" />
+    <input class="edit-form-input" type="text" id="desc" placeholder="Make pizza night super duper out of this…" />
+    <input class="edit-form-input" type="text" id="time" placeholder="1h 24 min" />
+    <input class="edit-form-input" type="text" id="size" placeholder="4 servings" />
+
+    <div class="edit-list">
+        <h2 class="list-title">Edit Ingredients:</h2>
+        <div id="ingredients"></div>
+        <button class="add-input" onClick="addIngredient()">
+            +
+        </button>
+    </div>
+
+    <div class="create-list">
+        <h2 class="list-title">Edit Instructions:</h2>
+        <div id = "instructions"></div>
+        <button class="add-input" onClick="addInstruction()">
+            +
+        </button>
+    </div>
+
+    <button class="submit" onClick="saveRecipe()">Submit Changes</button>
+</div>
+
+<script src="pages/edit/edit.js"></script>

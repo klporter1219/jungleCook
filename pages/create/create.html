@@ -1,0 +1,33 @@
+<div class="create">
+    <h3 class="create-title">Hey there, create your recipe!</h3>
+
+    <input class="create-form-input" type="file" id="image" placeholder="Add Recipe Image" />
+    <input class="create-form-input" type="text" id="name" placeholder="Recipe Name" />
+    <input class="create-form-input" type="text" id="desc" placeholder="Recipe Description" />
+    <input class="create-form-input" type="text" id="time" placeholder="Recipe Total Time" />
+    <input class="create-form-input" type="text" id="size" placeholder="Recipe Serving Size" />
+
+    <div class="create-list">
+        <h2 class="list-title">Enter Ingredients:</h2>
+        <div id="ingredients">
+            <input class="add-form-input ingredient" type="text" placeholder="Enter an ingredient" />
+        </div>
+        <button class="add-input" onClick="addIngredient()">
+            +
+        </button>
+    </div>
+
+    <div class="create-list">
+        <h2 class="list-title">Enter Instructions:</h2>
+        <div id="instructions">
+            <input class="add-form-input instruction" type="text" placeholder="Enter an instruction" />
+        </div>
+        <button class="add-input" onClick="addInstruction()">
+            +
+        </button>
+    </div>
+
+    <button class="create-recipe" onClick="createRecipe()">Create Recipe</button>
+</div>
+
+<script src="pages/create/create.js"></script>

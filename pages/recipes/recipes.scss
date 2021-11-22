@@ -1,0 +1,148 @@
+.recipes {
+  background-image: linear-gradient(
+      to right,
+      rgba(167, 232, 189, 0.7),
+      rgba(167, 232, 189, 0.7)
+    ),
+    url(../images/recipe-hero.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+
+  .recipes-title {
+    font-size: 25px;
+    font-weight: lighter;
+    padding-top: 228px;
+    padding-left: 107px;
+  }
+
+  .pizza {
+    display: flex;
+  }
+
+  .recipe-pizza {
+    background-color: gray;
+    width: 300px;
+    height: 263px;
+    border-radius: 24px;
+    margin-top: 50px;
+    margin-left: 107px;
+  }
+
+  .view {
+    font-size: 20px;
+    font-weight: lighter;
+    width: 128px;
+    height: 42px;
+    background-color: #ffd972;
+    border-radius: 26px;
+    margin-top: 110px;
+    margin-left: 86px;
+  }
+
+  .view-link {
+    text-decoration: none;
+    color: black;
+  }
+
+  .food-desc {
+    width: 224px;
+    height: 263px;
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 24px;
+  }
+
+  .food-title {
+    font-size: 15px;
+    font-weight: lighter;
+    border-bottom: 3px solid black;
+    margin-top: 46px;
+    text-align: center;
+  }
+
+  .food-summary {
+    font-size: 9px;
+    font-weight: lighter;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .food-timer {
+    display: flex;
+  }
+
+  .timer {
+    width: 23px;
+    height: 24px;
+    margin-top: 20px;
+    margin-left: 71px;
+  }
+
+  .timer-desc {
+    margin-top: 25px;
+    margin-left: 18px;
+    font-weight: lighter;
+    font-size: 10px;
+  }
+
+  .food-serving {
+    display: flex;
+  }
+
+  .servings {
+    width: 23px;
+    height: 24px;
+    margin-top: 5px;
+    margin-left: 71px;
+  }
+
+  .servings-desc {
+    padding-top: 10px;
+    padding-left: 18px;
+    font-weight: lighter;
+    font-size: 10px;
+  }
+
+  .edit {
+    font-size: 20px;
+    font-weight: lighter;
+    background-color: #ffd972;
+    width: 128px;
+    height: 42px;
+    border-radius: 26px;
+    margin-top: 15px;
+    margin-left: 122px;
+  }
+
+  .edit-link {
+    text-decoration: none;
+    color: black;
+  }
+
+  .delete {
+    font-size: 20px;
+    font-weight: lighter;
+    background-color: #ffd972;
+    width: 128px;
+    height: 42px;
+    border-radius: 26px;
+    margin-top: 15px;
+    margin-left: 14px;
+  }
+
+  #recipe-list {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+
+    .loading {
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
